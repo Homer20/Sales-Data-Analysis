@@ -43,20 +43,6 @@ insert_employees_data = '''INSERT INTO employees (first_name, last_name, email, 
 product_excel_file = 'products_sold.xlsx'
 product_df = pd.read_excel(product_excel_file)
 products = list(product_df[['Product', 'Price ($)']].itertuples(index=False, name=None))
-#print(products)
-
-# employees = [
-#     ('Micheal', 'Scott', 'mscott@gmail.com', '555-123-4567'),
-#     ('Dwight', 'Schrute', 'beetfarms@gmail.com', '555-987-6543'),
-#     ('Pam', 'Beesly', 'beeslypam23@gmail.com', '555-456-7890'),
-#     ('Jim', 'Halpert', 'jimhalp@hotmail.com', '555-234-5678'),
-#     ('Angela', 'Martin', 'amartin@gmail.com', '555-789-0123'),
-#     ('Kevin', 'Malone', 'chiliman@gmail.com', '555-345-6789'),
-#     ('Oscar', 'Martinez', 'omartinez@hotmail.com', '555-901-2345'),
-#     ('Ryan', 'Howard', 'howard@gmail.com', '555-567-8901'),
-#     ('Kelly', 'Kapoor', 'kelly@gmail.com', '555-678-9012'),
-#     ('Toby', 'Flenderson', 'flends@yahoo.com', '555-789-0123')
-# ]
 
 employee_excel_file = 'employee_info.xlsx'
 
